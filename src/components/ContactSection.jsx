@@ -142,7 +142,7 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   disabled={sending}
-                  className="w-full flex items-center justify-center gap-2 bg-walnut text-bone py-4 text-xs font-body tracking-widest uppercase hover:bg-walnut/90 transition-colors disabled:opacity-50"
+                  className="w-full flex items-center justify-center gap-2 bg-walnut text-bone py-4 text-xs font-body tracking-widest uppercase hover:bg-sandstone transition-colors disabled:opacity-50"
                 >
                   {sending ? "Sending..." : "Send Inquiry"}
                   {!sending && <Send size={14} />}

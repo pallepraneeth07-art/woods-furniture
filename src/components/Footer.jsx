@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
           {/* Brand */}
           <div className="md:col-span-1">
-            <img src={LOGO_URL} alt="Woods Furnitures Logo" className="h-12 w-auto rounded-sm mb-4" />
+            <img src={LOGO_URL} alt="Woods Furnitures Logo" className="h-16 w-auto rounded-sm mb-4" />
             <p className="text-bone/40 font-body text-sm leading-relaxed font-light">
               Crafting timeless furniture since the beginning. A design studio dedicated to 
               the art of woodworking.

@@ -46,7 +46,7 @@ export default function HeroSection() {
 
           <a
             href="#collections"
-            className="mt-10 inline-flex items-center gap-3 border border-sandstone/50 text-bone px-8 py-4 text-sm font-body tracking-widest uppercase hover:bg-sandstone/20 transition-all duration-500"
+            className="mt-10 inline-flex items-center gap-3 border border-sandstone/60 text-bone px-8 py-4 text-sm font-body tracking-widest uppercase hover:bg-sandstone hover:text-bone transition-all duration-500"
           >
             Explore Collections
             <ArrowDown size={16} />

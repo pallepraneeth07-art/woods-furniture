@@ -14,7 +14,7 @@ module.exports = {
   			foreground: 'hsl(var(--foreground))',
   			walnut: '#2D1B14',
   			bone: '#F9F7F2',
-  			sandstone: '#C5A07F',
+  			sandstone: '#F03A2F',
   			oatmeal: '#E8E2D9',
   			card: {
   				DEFAULT: 'hsl(var(--card))',

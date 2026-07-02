@@ -30,7 +30,7 @@ export default function CategoryCard({ name, image, index }) {
 
         <a
           href="#contact"
-          className="mt-4 inline-flex items-center gap-2 border border-walnut/30 text-walnut px-5 py-2.5 text-xs font-body tracking-widest uppercase hover:bg-walnut hover:text-bone transition-all duration-400"
+          className="mt-4 inline-flex items-center gap-2 border border-walnut/30 text-walnut px-5 py-2.5 text-xs font-body tracking-widest uppercase hover:bg-sandstone hover:text-bone hover:border-sandstone transition-all duration-400"
         >
           Explore
           <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
