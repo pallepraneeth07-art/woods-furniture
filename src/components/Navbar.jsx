@@ -37,12 +37,12 @@ export default function Navbar() {
           
           <div className="hidden sm:block">
             <div className="flex items-center gap-4">
-              <div className="flex items-center gap-1.5">
+              <a href="https://maps.app.goo.gl/14SpMPxjC79o5LJy8?g_st=iw" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-sandstone transition-colors">
                 <MapPin size={13} className="text-sandstone" />
                 <span className={`font-body text-xs font-medium tracking-wide ${scrolled ? "text-bone/80" : "text-walnut/80"}`}>
                   Bowenpally
                 </span>
-              </div>
+              </a>
               <div className="w-px h-3 bg-current opacity-20" />
               <a href="https://maps.app.goo.gl/4YjTKFK2dHEAKLxa6?g_st=iw" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-sandstone transition-colors">
                 <MapPin size={13} className="text-sandstone" />
