@@ -36,15 +36,16 @@ export default function Navbar() {
             className="h-16 w-auto rounded-sm" />
           
           <div className="hidden sm:block">
-            <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-4">
               <div className="flex items-center gap-1.5">
-                <MapPin size={13} className={scrolled ? "text-sandstone" : "text-sandstone"} />
+                <MapPin size={13} className="text-sandstone" />
                 <span className={`font-body text-xs font-medium tracking-wide ${scrolled ? "text-bone/80" : "text-walnut/80"}`}>
                   Bowenpally
                 </span>
               </div>
+              <div className="w-px h-3 bg-current opacity-20" />
               <div className="flex items-center gap-1.5">
-                <MapPin size={13} className={scrolled ? "text-sandstone" : "text-sandstone"} />
+                <MapPin size={13} className="text-sandstone" />
                 <span className={`font-body text-xs font-medium tracking-wide ${scrolled ? "text-bone/80" : "text-walnut/80"}`}>
                   Doolapally
                 </span>
