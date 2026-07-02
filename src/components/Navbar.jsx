@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, MapPin } from "lucide-react";
+import { Menu, X, MapPin, Phone } from "lucide-react";
 
 const LOGO_URL = "https://media.base44.com/images/public/user_6a45115e77db446c8ab07dad/d6f85458b_IMG_20260702_095656.jpg";
 
@@ -36,18 +36,26 @@ export default function Navbar() {
             className="h-16 w-auto rounded-sm" />
           
           <div className="hidden sm:block">
-            <div className="flex items-center gap-4">
-              <a href="https://maps.app.goo.gl/14SpMPxjC79o5LJy8?g_st=iw" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-sandstone transition-colors">
-                <MapPin size={13} className="text-sandstone" />
+            <div className="flex flex-col gap-1">
+              <div className="flex items-center gap-4">
+                <a href="https://maps.app.goo.gl/14SpMPxjC79o5LJy8?g_st=iw" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-sandstone transition-colors">
+                  <MapPin size={13} className="text-sandstone" />
+                  <span className={`font-body text-xs font-medium tracking-wide ${scrolled ? "text-bone/80" : "text-walnut/80"}`}>
+                    Bowenpally
+                  </span>
+                </a>
+                <div className="w-px h-3 bg-current opacity-20" />
+                <a href="https://maps.app.goo.gl/4YjTKFK2dHEAKLxa6?g_st=iw" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-sandstone transition-colors">
+                  <MapPin size={13} className="text-sandstone" />
+                  <span className={`font-body text-xs font-medium tracking-wide ${scrolled ? "text-bone/80" : "text-walnut/80"}`}>
+                    Doolapally
+                  </span>
+                </a>
+              </div>
+              <a href="tel:+919912665791" className="flex items-center gap-1.5 hover:text-sandstone transition-colors">
+                <Phone size={13} className="text-sandstone" />
                 <span className={`font-body text-xs font-medium tracking-wide ${scrolled ? "text-bone/80" : "text-walnut/80"}`}>
-                  Bowenpally
-                </span>
-              </a>
-              <div className="w-px h-3 bg-current opacity-20" />
-              <a href="https://maps.app.goo.gl/4YjTKFK2dHEAKLxa6?g_st=iw" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-sandstone transition-colors">
-                <MapPin size={13} className="text-sandstone" />
-                <span className={`font-body text-xs font-medium tracking-wide ${scrolled ? "text-bone/80" : "text-walnut/80"}`}>
-                  Doolapally
+                  +91 99126 65791
                 </span>
               </a>
             </div>
