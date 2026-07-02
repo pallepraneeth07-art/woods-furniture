@@ -36,12 +36,12 @@ export default function Navbar() {
             className="h-10 w-auto rounded-sm" />
           
           <div className="hidden sm:block">
-            <span className={`font-heading text-lg font-semibold tracking-wide hidden ${scrolled ? "text-bone" : "text-walnut"}`}>
-              WOODS
-            </span>
-            <span className={`font-heading text-lg font-light italic ml-1 hidden ${scrolled ? "text-sandstone" : "text-sandstone"}`}>
-              Furnitures
-            </span>
+            
+
+            
+            
+
+            
           </div>
         </a>
 
