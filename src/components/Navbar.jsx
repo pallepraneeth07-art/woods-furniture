@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, MapPin } from "lucide-react";
 
 const LOGO_URL = "https://media.base44.com/images/public/user_6a45115e77db446c8ab07dad/d6f85458b_IMG_20260702_095656.jpg";
 
@@ -36,12 +36,20 @@ export default function Navbar() {
             className="h-16 w-auto rounded-sm" />
           
           <div className="hidden sm:block">
-            
-
-            
-            
-
-            
+            <div className="flex flex-col gap-1">
+              <div className="flex items-center gap-1.5">
+                <MapPin size={13} className={scrolled ? "text-sandstone" : "text-sandstone"} />
+                <span className={`font-body text-xs font-medium tracking-wide ${scrolled ? "text-bone/80" : "text-walnut/80"}`}>
+                  Bowenpally
+                </span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <MapPin size={13} className={scrolled ? "text-sandstone" : "text-sandstone"} />
+                <span className={`font-body text-xs font-medium tracking-wide ${scrolled ? "text-bone/80" : "text-walnut/80"}`}>
+                  Doolapally
+                </span>
+              </div>
+            </div>
           </div>
         </a>
 
