@@ -28,27 +28,27 @@ export default function CollectionsSection() {
     <section id="collections" className="py-20 md:py-32 bg-oatmeal">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
-        <motion.div
-          className="mb-16 md:mb-20 hidden"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}>
-          
-          <div className="flex items-center gap-4 mb-4">
-            <div className="w-12 h-px bg-sandstone" />
-            <span className="text-sandstone text-xs font-body tracking-[0.3em] uppercase hidden">
-              Our Collections
-            </span>
-          </div>
-          <h2 className="font-heading text-3xl md:text-5xl text-walnut font-medium leading-tight">
-            Curated for Every Space
-          </h2>
-          <p className="mt-4 text-walnut/60 font-body text-base md:text-lg max-w-xl leading-relaxed font-light">
-            Discover furniture that blends form and function — 
-            each piece crafted with precision and care.
-          </p>
-        </motion.div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
         {/* Category Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
