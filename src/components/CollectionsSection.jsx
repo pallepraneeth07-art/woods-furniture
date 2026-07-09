@@ -10,7 +10,7 @@ const CATEGORIES = [
   { name: "Recliner Sofas", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/9d7d38bfc_IMG-20240904-WA0045.jpg" },
   { name: "Deewan Cum Bed", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/90315c32b_IMG-20241123-WA0021.jpg" },
   { name: "Wooden Sofas", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/e27d4739c_IMG-20230730-WA0002.jpg" },
-  { name: "Office Furniture", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/fc7d4ee19_generated_a85bc518.png" },
+  { name: "Office Furniture", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/d25c49985_IMG-20240318-WA0010.jpg" },
   { name: "TV Units", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/334b723ed_generated_91b5240c.png" },
   { name: "Center Tables", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/1e2b71110_generated_0570b34a.png" },
   { name: "Wardrobes", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/0f0154c5e_generated_08f8d389.png" },
