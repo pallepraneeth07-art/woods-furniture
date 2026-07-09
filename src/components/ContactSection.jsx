@@ -54,9 +54,14 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-walnut font-body text-sm font-medium">Showroom</p>
-                <p className="text-walnut/60 font-body text-sm">
-                  Woods Furnitures Design Studio
-                </p>
+                <div className="flex flex-col gap-1">
+                  <a href="https://maps.app.goo.gl/14SpMPxjC79o5LJy8?g_st=iw" target="_blank" rel="noopener noreferrer" className="text-walnut/60 font-body text-sm hover:text-sandstone transition-colors">
+                    Bowenpally, Hyderabad
+                  </a>
+                  <a href="https://maps.app.goo.gl/4YjTKFK2dHEAKLxa6?g_st=iw" target="_blank" rel="noopener noreferrer" className="text-walnut/60 font-body text-sm hover:text-sandstone transition-colors">
+                    Doolapally, Hyderabad
+                  </a>
+                </div>
               </div>
             </div>
 
