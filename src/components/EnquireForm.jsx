@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 
-const WHATSAPP_NUMBER = "919876543210";
+const WHATSAPP_NUMBER = "919866659400";
 
 export default function EnquireForm() {
   const [form, setForm] = useState({ name: "", phone: "", message: "" });

@@ -52,10 +52,10 @@ export default function Navbar() {
                   </span>
                 </a>
               </div>
-              <a href="tel:+919912665791" className="flex items-center gap-1.5 hover:text-sandstone transition-colors">
+              <a href="tel:+919866659400" className="flex items-center gap-1.5 hover:text-sandstone transition-colors">
                 <Phone size={13} className="text-sandstone" />
                 <span className={`font-body text-xs font-medium tracking-wide ${scrolled ? "text-bone/80" : "text-walnut/80"}`}>
-                  +91 99126 65791
+                  +91 98666 59400
                 </span>
               </a>
             </div>
