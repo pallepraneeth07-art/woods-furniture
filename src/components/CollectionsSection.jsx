@@ -5,7 +5,7 @@ import CategoryCard from "@/components/CategoryCard";
 const CATEGORIES = [
   { name: "L-Shape Sofas", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/3dd5fa506_IMG-20240619-WA0001.jpg", link: "https://photos.google.com/share/AF1QipNDpU2VJFP5OlO2IRuHwQvG_h4Wj1neH2Wn8qXU7Ccb-U0wzwPmikTRj0u5tjWDLQ?pli=1&key=ZjRLWHJGRWVYZXFiXzk1elB0NVBEUnB2dmJxeC1B" },
   { name: "3+1+1 Sofas", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/77d4901a4_IMG-20241224-WA0001.jpg", link: "https://photos.google.com/share/AF1QipMIBxLpjcS-Ty9_dcpDzpQukgDKnWZBtNGCHKL-iZ9piC1TWr28-qB0rhC7hKrw4Q?key=ZG9FSWg3RElZWFZBb3ZBbTlmT3Bad0Z5d2JlUWF3" },
-  { name: "Dining", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/5e4d3cd70_IMG-20250517-WA0017.jpg" },
+  { name: "Dining", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/5e4d3cd70_IMG-20250517-WA0017.jpg", link: "https://photos.google.com/share/AF1QipNZHmr4ezdSh2Mfu4sVajqpqCp1owsoCxd28Sn31rWMupMEp_EOtfh-Y9Bdrm-fOg?key=enc5OVFyWWNTZmJYaVBtbGM4d1Nxdk1SQ1lDaHZB" },
   { name: "Cots", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/c1ea095f7_IMG-20230819-WA0011.jpg" },
   { name: "Recliner Sofas", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/9d7d38bfc_IMG-20240904-WA0045.jpg" },
   { name: "Deewan Cum Bed", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/90315c32b_IMG-20241123-WA0021.jpg" },
