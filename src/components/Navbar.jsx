@@ -16,7 +16,6 @@ export default function Navbar() {
   const links = [
   { label: "Home", href: "#hero" },
   { label: "Collections", href: "#collections" },
-  { label: "Craftsmanship", href: "#craftsmanship" },
   { label: "Contact", href: "#contact" }];
 
 
