@@ -14,7 +14,7 @@ const CATEGORIES = [
   { name: "TV Units", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/b0c52ac9d_IMG-20230306-WA0015.jpg", link: "https://photos.google.com/share/AF1QipPcMvhW0dYQm22JNQw7sgJxYbhvqUoHKAtLL5XYanSYoYlBCXcfAHiAeaF4rpt5jA?key=bml1RWtGQXhzeGx6OEFEQUxMeUFwYWNDdG1RZzJR" },
   { name: "Center Tables", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/928c1b7e8_IMG-20230221-WA0052.jpg" },
   { name: "Wardrobes", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/e27f622da_IMG-20240812-WA0020.jpg", link: "https://photos.google.com/share/AF1QipOmmQFvijBtWrgeSV9OrS6w-ATbM2Lk9iTX_cM0g84sMeXUDRD6bUlVKnmQYxLBPg?key=SlJMSHUzWWFTMHFNVDdwa3psZ2xRck9MLVZXdG9R" },
-  { name: "Cushion & Designer Cots", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/18bd4aa3f_IMG-20241001-WA0021.jpg" },
+  { name: "Cushion & Designer Cots", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/18bd4aa3f_IMG-20241001-WA0021.jpg", link: "https://photos.google.com/share/AF1QipNxHCbiTnrAxtrX4Zvaj19M8VsmBM9Tz73wO8oogeS0bf3J4oiPv3DayFGy2v1gzw?key=T1BVWkNNXzRrdlVHVHFidF8tR0UtOFFOYlRyeTJn" },
   { name: "Loungers & Sofa Cum Bed", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/fa4fafd43_IMG-20250702-WA0002.jpg" },
   { name: "Dressing Tables", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/02275bee6_IMG_7654.jpg" },
   { name: "Shoe Racks", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/8552f83ab_generated_252fee30.png" },
