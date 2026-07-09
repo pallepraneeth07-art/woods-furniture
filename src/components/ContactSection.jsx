@@ -11,8 +11,8 @@ export default function ContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="max-w-2xl"
-        >
+          className="max-w-2xl">
+          
           <div className="flex items-center gap-4 mb-4">
             <div className="w-12 h-px bg-sandstone" />
             <span className="text-sandstone text-xs font-body tracking-[0.3em] uppercase">
@@ -22,7 +22,7 @@ export default function ContactSection() {
           <h2 className="font-heading text-3xl md:text-5xl text-walnut font-medium leading-tight">
             Visit Our
             <br />
-            <span className="italic text-sandstone">Design Studio</span>
+            <span className="italic text-sandstone">Fur</span>
           </h2>
           <p className="mt-6 text-walnut/60 font-body text-base leading-relaxed font-light max-w-md">
             Walk through our curated showroom and experience each piece up close. 
@@ -69,6 +69,6 @@ export default function ContactSection() {
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
