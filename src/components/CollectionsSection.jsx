@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import CategoryCard from "@/components/CategoryCard";
 
 const CATEGORIES = [
-  { name: "L-Shape Sofas", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/3dd5fa506_IMG-20240619-WA0001.jpg" },
+  { name: "L-Shape Sofas", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/3dd5fa506_IMG-20240619-WA0001.jpg", link: "https://photos.google.com/share/AF1QipNDpU2VJFP5OlO2IRuHwQvG_h4Wj1neH2Wn8qXU7Ccb-U0wzwPmikTRj0u5tjWDLQ?pli=1&key=ZjRLWHJGRWVYZXFiXzk1elB0NVBEUnB2dmJxeC1B" },
   { name: "3+1+1 Sofas", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/77d4901a4_IMG-20241224-WA0001.jpg" },
   { name: "Dining", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/5e4d3cd70_IMG-20250517-WA0017.jpg" },
   { name: "Cots", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/c1ea095f7_IMG-20230819-WA0011.jpg" },
@@ -57,6 +57,7 @@ export default function CollectionsSection() {
               key={cat.name}
               name={cat.name}
               image={cat.image}
+              link={cat.link}
               index={i}
             />
           ))}

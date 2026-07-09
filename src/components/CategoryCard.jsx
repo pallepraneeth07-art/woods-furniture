@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-export default function CategoryCard({ name, image, index }) {
+export default function CategoryCard({ name, image, index, link }) {
   return (
     <motion.div
       className="group relative overflow-hidden bg-bone cursor-pointer"
@@ -29,7 +29,9 @@ export default function CategoryCard({ name, image, index }) {
         </div>
 
         <a
-          href="#contact"
+          href={link || "#contact"}
+          target={link ? "_blank" : undefined}
+          rel={link ? "noopener noreferrer" : undefined}
           className="mt-4 inline-flex items-center gap-2 border border-walnut/30 text-walnut px-5 py-2.5 text-xs font-body tracking-widest uppercase hover:bg-sandstone hover:text-bone hover:border-sandstone transition-all duration-400"
         >
           Explore
