@@ -16,7 +16,7 @@ const CATEGORIES = [
   { name: "Wardrobes", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/e27f622da_IMG-20240812-WA0020.jpg" },
   { name: "Cushion & Designer Cots", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/18bd4aa3f_IMG-20241001-WA0021.jpg" },
   { name: "Loungers & Sofa Cum Bed", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/fa4fafd43_IMG-20250702-WA0002.jpg" },
-  { name: "Dressing Tables", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/8a2e4b3fb_generated_19b978dd.png" },
+  { name: "Dressing Tables", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/d7dad69d2_IMG_20230219_162853.jpg" },
   { name: "Shoe Racks", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/8552f83ab_generated_252fee30.png" },
   { name: "Accent Chairs", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/327910d91_generated_a961b8ef.png" },
   { name: "Marbles", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/3a7c839a6_generated_ddf12d08.png" },
