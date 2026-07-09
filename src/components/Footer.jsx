@@ -26,9 +26,9 @@ export default function Footer() {
     <footer className="bg-walnut py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Top: Brand + Categories */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 mb-16">
           {/* Brand */}
-          <div className="md:col-span-1">
+          <div className="col-span-2 md:col-span-1">
             <img src={LOGO_URL} alt="Woods Furnitures Logo" className="h-16 w-auto rounded-sm mb-4" />
             <p className="text-bone/40 font-body text-sm leading-relaxed font-light">
               Crafting timeless furniture since the beginning. A design studio dedicated to 

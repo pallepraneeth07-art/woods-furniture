@@ -107,6 +107,24 @@ export default function Navbar() {
                 {link.label}
               </a>
           )}
+            <div className="pt-4 mt-2 border-t border-sandstone/20 flex flex-col gap-3">
+              <a href="tel:+919866659400" className="flex items-center gap-2 text-bone/80 hover:text-sandstone text-sm font-body font-medium transition-colors">
+                <Phone size={14} className="text-sandstone" />
+                +91 98666 59400
+              </a>
+              <a href="tel:+918341149400" className="flex items-center gap-2 text-bone/80 hover:text-sandstone text-sm font-body font-medium transition-colors">
+                <Phone size={14} className="text-sandstone" />
+                +91 83411 49400
+              </a>
+              <a href="https://maps.app.goo.gl/14SpMPxjC79o5LJy8?g_st=iw" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-bone/80 hover:text-sandstone text-sm font-body font-medium transition-colors">
+                <MapPin size={14} className="text-sandstone" />
+                Bowenpally
+              </a>
+              <a href="https://maps.app.goo.gl/4YjTKFK2dHEAKLxa6?g_st=iw" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-bone/80 hover:text-sandstone text-sm font-body font-medium transition-colors">
+                <MapPin size={14} className="text-sandstone" />
+                Doolapally
+              </a>
+            </div>
           </div>
         </div>
       }
