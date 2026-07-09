@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import CategoryCard from "@/components/CategoryCard";
 
 const CATEGORIES = [
-  { name: "L-Shape Sofas", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/bc920ab17_generated_6f8ee745.png" },
+  { name: "L-Shape Sofas", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/3dd5fa506_IMG-20240619-WA0001.jpg" },
   { name: "3+1+1 Sofas", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/33ab3b057_generated_ebfd2241.png" },
   { name: "Dining", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/28241d3fd_generated_a5f70759.png" },
   { name: "Cots", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/08086edb0_generated_a8b573f5.png" },
