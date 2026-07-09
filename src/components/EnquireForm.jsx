@@ -1,21 +1,17 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
-import { useToast } from "@/components/ui/use-toast";
+
+const WHATSAPP_NUMBER = "919876543210";
 
 export default function EnquireForm() {
-  const { toast } = useToast();
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
-  const [sending, setSending] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSending(true);
-    setTimeout(() => {
-      toast({ title: "Inquiry Sent", description: "We'll get back to you shortly." });
-      setForm({ name: "", phone: "", message: "" });
-      setSending(false);
-    }, 1000);
+    const text = `Hello Woods Furnitures, I'd like to enquire.%0A%0AName: ${encodeURIComponent(form.name)}%0APhone: ${encodeURIComponent(form.phone)}%0AMessage: ${encodeURIComponent(form.message)}`;
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
+    setForm({ name: "", phone: "", message: "" });
   };
 
   return (
@@ -74,11 +70,10 @@ export default function EnquireForm() {
 
         <button
           type="submit"
-          disabled={sending}
-          className="w-full flex items-center justify-center gap-2 bg-walnut text-bone py-3 text-xs font-body tracking-widest uppercase hover:bg-sandstone transition-colors disabled:opacity-50"
+          className="w-full flex items-center justify-center gap-2 bg-walnut text-bone py-3 text-xs font-body tracking-widest uppercase hover:bg-sandstone transition-colors"
         >
-          {sending ? "Sending..." : "Send Inquiry"}
-          {!sending && <Send size={14} />}
+          Send via WhatsApp
+          <Send size={14} />
         </button>
       </div>
     </motion.form>
