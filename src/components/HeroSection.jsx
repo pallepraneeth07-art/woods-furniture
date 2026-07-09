@@ -41,7 +41,7 @@ export default function HeroSection() {
               Furnitures
             </h1>
 
-            <p className="mt-8 text-bone/70 font-body text-base md:text-lg max-w-md leading-relaxed font-light">
+            <p className="mt-8 text-bone/70 font-body text-base md:text-lg max-w-md leading-relaxed font-light hidden">
               Crafting timeless furniture that transforms spaces into living works of art.
               Every grain tells a story of heritage and craftsmanship.
             </p>
