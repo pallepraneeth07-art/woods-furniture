@@ -17,7 +17,7 @@ const CATEGORIES = [
   { name: "Cushion & Designer Cots", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/18bd4aa3f_IMG-20241001-WA0021.jpg", link: "https://photos.google.com/share/AF1QipNxHCbiTnrAxtrX4Zvaj19M8VsmBM9Tz73wO8oogeS0bf3J4oiPv3DayFGy2v1gzw?key=T1BVWkNNXzRrdlVHVHFidF8tR0UtOFFOYlRyeTJn" },
   { name: "Loungers & Sofa Cum Bed", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/fa4fafd43_IMG-20250702-WA0002.jpg", link: "https://photos.google.com/share/AF1QipPA7xc74zHmz9l2qj4z2M0CpQCWvEG90aDmsi4wWzUFO-vRBdfdDg27aLDwaB9eMA?key=XzRBTzltbE1hUExFU3ZZVWJSbHBlNm5DMWRDRmpB" },
   { name: "Dressing Tables", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/02275bee6_IMG_7654.jpg", link: "https://photos.google.com/share/AF1QipMmO_QfDeMt01JCpRQG5YeKui4p6zCrxphF_pY_EbPFDSZQq4UzDfIdikdQjw9Spw?key=SXpFSzRDaWl4dEUtUFZ1dXFBWjhzeE5RYTNHQ3Bn" },
-  { name: "Shoe Racks", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/8552f83ab_generated_252fee30.png" },
+  { name: "Shoe Racks", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/8552f83ab_generated_252fee30.png", link: "https://photos.google.com/share/AF1QipPobboUAAScmZFHMdtGJW2qEPPufYrYHwsfNIqIw8S1CumjnihxrwBniv5BGQp52g?key=czdEWFhVdV91SVdNWDE4NVY4U3pOYzkwZzZlcElB" },
   { name: "Accent Chairs", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/327910d91_generated_a961b8ef.png" },
   { name: "Marbles", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/d668b488c_IMG-20240808-WA0018.jpg" },
   { name: "Bunk Beds", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/dc831ec86_IMG-20240201-WA0006.jpg" },
