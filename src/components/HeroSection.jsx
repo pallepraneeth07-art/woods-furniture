@@ -15,7 +15,7 @@ export default function HeroSection() {
         <img
           src={HERO_IMG}
           alt="Premium furniture showcase"
-          className="w-full h-full object-cover object-left" />
+          className="w-full h-full object-cover" />
 
         <div className="absolute inset-0 bg-gradient-to-r from-walnut/80 via-walnut/50 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-walnut/60 via-transparent to-walnut/20" />
