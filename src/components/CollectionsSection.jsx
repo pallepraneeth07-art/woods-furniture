@@ -25,7 +25,7 @@ const CATEGORIES = [
 
 export default function CollectionsSection() {
   return (
-    <section id="collections" className="py-20 md:py-32 bg-oatmeal">
+    <section id="collections" className="pb-20 md:pb-32 bg-oatmeal">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
         
