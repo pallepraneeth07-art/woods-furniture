@@ -12,8 +12,8 @@ export default function HeroSection() {
         <img
           src={HERO_IMG}
           alt="Premium furniture showcase"
-          className="w-full h-full object-cover"
-        />
+          className="w-full h-full object-cover" />
+        
         <div className="absolute inset-0 bg-gradient-to-r from-walnut/80 via-walnut/50 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-walnut/60 via-transparent to-walnut/20" />
       </div>
@@ -23,8 +23,8 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
+          transition={{ duration: 1, ease: "easeOut" }}>
+          
           <div className="flex items-center gap-4 mb-6">
             <div className="w-16 h-px bg-sandstone" />
             <span className="text-sandstone text-xs font-body tracking-[0.3em] uppercase">
@@ -39,15 +39,15 @@ export default function HeroSection() {
             Furnitures
           </h1>
 
-          <p className="mt-8 text-bone/70 font-body text-base md:text-lg max-w-md leading-relaxed font-light">
+          <p className="mt-8 text-bone/70 font-body text-base md:text-lg max-w-md leading-relaxed font-light hidden">
             Crafting timeless furniture that transforms spaces into living works of art. 
             Every grain tells a story of heritage and craftsmanship.
           </p>
 
           <a
             href="#collections"
-            className="mt-10 inline-flex items-center gap-3 border border-sandstone/60 text-bone px-8 py-4 text-sm font-body tracking-widest uppercase hover:bg-sandstone hover:text-bone transition-all duration-500"
-          >
+            className="mt-10 inline-flex items-center gap-3 border border-sandstone/60 text-bone px-8 py-4 text-sm font-body tracking-widest uppercase hover:bg-sandstone hover:text-bone transition-all duration-500">
+            
             Explore Collections
             <ArrowDown size={16} />
           </a>
@@ -58,11 +58,11 @@ export default function HeroSection() {
       <motion.div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
         animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
+        transition={{ duration: 2, repeat: Infinity }}>
+        
         <span className="text-bone/40 text-xs font-body tracking-widest uppercase">Scroll</span>
         <div className="w-px h-8 bg-gradient-to-b from-sandstone/60 to-transparent" />
       </motion.div>
-    </section>
-  );
+    </section>);
+
 }
