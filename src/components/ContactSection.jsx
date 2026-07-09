@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Phone, MapPin, Clock } from "lucide-react";
+import { Phone, MapPin, Clock, FileText } from "lucide-react";
 
 export default function ContactSection() {
   return (
@@ -31,6 +31,18 @@ export default function ContactSection() {
           </p>
 
           <div className="mt-10 space-y-6">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 border border-sandstone/30 flex items-center justify-center flex-shrink-0">
+                <FileText size={16} className="text-sandstone" />
+              </div>
+              <div>
+                <p className="text-walnut font-body text-sm font-medium">GSTIN/UIN</p>
+                <p className="text-walnut/60 font-body text-sm">
+                  36AACFW3245M1ZV
+                </p>
+              </div>
+            </div>
+
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 border border-sandstone/30 flex items-center justify-center flex-shrink-0">
                 <Phone size={16} className="text-sandstone" />
