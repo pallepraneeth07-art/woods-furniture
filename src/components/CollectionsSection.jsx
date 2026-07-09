@@ -7,7 +7,7 @@ const CATEGORIES = [
   { name: "3+1+1 Sofas", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/77d4901a4_IMG-20241224-WA0001.jpg", link: "https://photos.google.com/share/AF1QipMIBxLpjcS-Ty9_dcpDzpQukgDKnWZBtNGCHKL-iZ9piC1TWr28-qB0rhC7hKrw4Q?key=ZG9FSWg3RElZWFZBb3ZBbTlmT3Bad0Z5d2JlUWF3" },
   { name: "Dining", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/5e4d3cd70_IMG-20250517-WA0017.jpg", link: "https://photos.google.com/share/AF1QipNZHmr4ezdSh2Mfu4sVajqpqCp1owsoCxd28Sn31rWMupMEp_EOtfh-Y9Bdrm-fOg?key=enc5OVFyWWNTZmJYaVBtbGM4d1Nxdk1SQ1lDaHZB" },
   { name: "Cots", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/c1ea095f7_IMG-20230819-WA0011.jpg", link: "https://photos.google.com/share/AF1QipNNm1N_z5Ex3uieaaHeUEhOX77kEI-pFYRW-sDm0ulDcQXnXR3EMkNgeRsOnXF66Q?key=dDFDT09DRFpFTTk5UnlrOWJCZkJGSnkxNlRuckJB" },
-  { name: "Recliner Sofas", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/9d7d38bfc_IMG-20240904-WA0045.jpg" },
+  { name: "Recliner Sofas", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/9d7d38bfc_IMG-20240904-WA0045.jpg", link: "https://photos.google.com/share/AF1QipPviGoL92Gss21Bdsc44SDR-5wJnBwLLeD6-MY4F3qPEEkyQevM3Pxw9umUjQ5xhQ?key=cGdKNERVUG1FTlNNeThJSkwxRmY4aDBIWHJTWE9B" },
   { name: "Deewan Cum Bed", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/90315c32b_IMG-20241123-WA0021.jpg" },
   { name: "Wooden Sofas", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/e27d4739c_IMG-20230730-WA0002.jpg" },
   { name: "Office Furniture", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/d25c49985_IMG-20240318-WA0010.jpg" },
