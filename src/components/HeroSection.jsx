@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import EnquireForm from "@/components/EnquireForm";
 
-const HERO_IMG = "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/4c0a87440_IMG-20260709-WA0004.jpg";
+const HERO_IMG = "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/6b432cd08_IMG-20260709-WA0004.jpg";
 
 export default function HeroSection() {
   const [enquireOpen, setEnquireOpen] = useState(false);
