@@ -53,13 +53,23 @@ export default function ContactSection() {
                 <MapPin size={16} className="text-sandstone" />
               </div>
               <div>
-                <p className="text-walnut font-body text-sm font-medium">Showroom</p>
-                <div className="flex flex-col gap-1">
-                  <a href="https://maps.app.goo.gl/14SpMPxjC79o5LJy8?g_st=iw" target="_blank" rel="noopener noreferrer" className="text-walnut/60 font-body text-sm hover:text-sandstone transition-colors">
-                    Bowenpally, Hyderabad
+                <p className="text-walnut font-body text-sm font-medium">Showrooms</p>
+                <div className="flex flex-col gap-4">
+                  <a href="https://maps.app.goo.gl/14SpMPxjC79o5LJy8?g_st=iw" target="_blank" rel="noopener noreferrer" className="group block">
+                    <span className="block text-walnut font-body text-sm hover:text-sandstone transition-colors">
+                      Bowenpally
+                    </span>
+                    <span className="block text-walnut/60 font-body text-xs leading-relaxed mt-1 group-hover:text-sandstone/80 transition-colors">
+                      #174, Plassey Lane, adj. to Malla Reddy Garden, Old Bowenpally, Secunderabad
+                    </span>
                   </a>
-                  <a href="https://maps.app.goo.gl/4YjTKFK2dHEAKLxa6?g_st=iw" target="_blank" rel="noopener noreferrer" className="text-walnut/60 font-body text-sm hover:text-sandstone transition-colors">
-                    Doolapally, Hyderabad
+                  <a href="https://maps.app.goo.gl/4YjTKFK2dHEAKLxa6?g_st=iw" target="_blank" rel="noopener noreferrer" className="group block">
+                    <span className="block text-walnut font-body text-sm hover:text-sandstone transition-colors">
+                      Doolapally
+                    </span>
+                    <span className="block text-walnut/60 font-body text-xs leading-relaxed mt-1 group-hover:text-sandstone/80 transition-colors">
+                      D.No 20-13, Burma Agaya Nagar, beside St. Martin's Engg College, Dulapally Road, Kompally, Hyderabad
+                    </span>
                   </a>
                 </div>
               </div>
