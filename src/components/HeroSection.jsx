@@ -1,15 +1,25 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowDown, X } from "lucide-react";
 import EnquireForm from "@/components/EnquireForm";
 
-const HERO_IMG = "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/440e3ae13_generated_image.png";
+const HERO_IMG = "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/4c0a87440_IMG-20260709-WA0004.jpg";
 
 export default function HeroSection() {
+  const [enquireOpen, setEnquireOpen] = useState(false);
+
   return (
     <section id="hero" className="relative h-screen min-h-[600px] overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-walnut" />
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src={HERO_IMG}
+          alt="Premium furniture showcase"
+          className="w-full h-full object-cover" />
+
+        <div className="absolute inset-0 bg-gradient-to-r from-walnut/80 via-walnut/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-walnut/60 via-transparent to-walnut/20" />
+      </div>
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center px-6 md:px-16 lg:px-24 max-w-7xl mx-auto">
@@ -47,12 +57,48 @@ export default function HeroSection() {
             </a>
           </motion.div>
 
-          {/* Enquire Form */}
+          {/* Enquire Button */}
           <div className="hidden lg:flex justify-end">
-            <EnquireForm />
+            <button
+              onClick={() => setEnquireOpen(true)}
+              className="bg-sandstone text-bone px-8 py-4 text-sm font-body tracking-widest uppercase hover:bg-bone hover:text-walnut transition-all duration-500"
+            >
+              Enquire Now
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Enquire Modal */}
+      <AnimatePresence>
+        {enquireOpen && (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-walnut/60 backdrop-blur-sm"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setEnquireOpen(false)}
+          >
+            <motion.div
+              className="relative max-w-md w-full"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setEnquireOpen(false)}
+                className="absolute -top-3 -right-3 z-10 w-10 h-10 bg-walnut text-bone flex items-center justify-center hover:bg-sandstone transition-colors"
+                aria-label="Close"
+              >
+                <X size={18} />
+              </button>
+              <EnquireForm />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Scroll indicator */}
       <motion.div
