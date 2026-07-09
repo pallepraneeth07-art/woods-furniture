@@ -13,7 +13,7 @@ const CATEGORIES = [
   { name: "Office Furniture", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/d25c49985_IMG-20240318-WA0010.jpg" },
   { name: "TV Units", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/b0c52ac9d_IMG-20230306-WA0015.jpg" },
   { name: "Center Tables", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/928c1b7e8_IMG-20230221-WA0052.jpg" },
-  { name: "Wardrobes", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/0f0154c5e_generated_08f8d389.png" },
+  { name: "Wardrobes", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/e27f622da_IMG-20240812-WA0020.jpg" },
   { name: "Cushion & Designer Cots", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/1c5ed3921_generated_e0a7f66c.png" },
   { name: "Loungers & Sofa Cum Bed", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/ea4e5593b_generated_56f53c86.png" },
   { name: "Dressing Tables", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/8a2e4b3fb_generated_19b978dd.png" },
