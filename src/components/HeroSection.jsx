@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import EnquireForm from "@/components/EnquireForm";
 
 const HERO_IMG = "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/2def08e35_generated_image.png";
 
@@ -19,39 +20,46 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-16 lg:px-24 max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}>
-          
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-16 h-px bg-sandstone" />
-            <span className="text-sandstone text-xs font-body tracking-[0.3em] uppercase">
-              A Design Studio
-            </span>
-          </div>
-
-          <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-bone leading-none tracking-tight">
-            WOODS
-          </h1>
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light italic text-sandstone leading-none mt-1">
-            Furnitures
-          </h1>
-
-          
-
-
-          
-
-          <a
-            href="#collections"
-            className="mt-10 inline-flex items-center gap-3 border border-sandstone/60 text-bone px-8 py-4 text-sm font-body tracking-widest uppercase hover:bg-sandstone hover:text-bone transition-all duration-500">
+      <div className="relative z-10 h-full flex items-center px-6 md:px-16 lg:px-24 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}>
             
-            Explore Collections
-            <ArrowDown size={16} />
-          </a>
-        </motion.div>
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-16 h-px bg-sandstone" />
+              <span className="text-sandstone text-xs font-body tracking-[0.3em] uppercase">
+                A Design Studio
+              </span>
+            </div>
+
+            <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-bone leading-none tracking-tight">
+              WOODS
+            </h1>
+            <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light italic text-sandstone leading-none mt-1">
+              Furnitures
+            </h1>
+
+            <p className="mt-8 text-bone/70 font-body text-base md:text-lg max-w-md leading-relaxed font-light">
+              Crafting timeless furniture that transforms spaces into living works of art.
+              Every grain tells a story of heritage and craftsmanship.
+            </p>
+
+            <a
+              href="#collections"
+              className="mt-10 inline-flex items-center gap-3 border border-sandstone/60 text-bone px-8 py-4 text-sm font-body tracking-widest uppercase hover:bg-sandstone hover:text-bone transition-all duration-500">
+              
+              Explore Collections
+              <ArrowDown size={16} />
+            </a>
+          </motion.div>
+
+          {/* Enquire Form */}
+          <div className="hidden lg:flex justify-end">
+            <EnquireForm />
+          </div>
+        </div>
       </div>
 
       {/* Scroll indicator */}
