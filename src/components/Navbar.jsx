@@ -52,12 +52,20 @@ export default function Navbar() {
                   </span>
                 </a>
               </div>
-              <a href="tel:+919866659400" className="flex items-center gap-1.5 hover:text-sandstone transition-colors">
-                <Phone size={13} className="text-sandstone" />
-                <span className={`font-body text-xs font-medium tracking-wide ${scrolled ? "text-bone/80" : "text-walnut/80"}`}>
-                  +91 98666 59400
-                </span>
-              </a>
+              <div className="flex items-center gap-1.5">
+                <a href="tel:+919866659400" className="flex items-center gap-1.5 hover:text-sandstone transition-colors">
+                  <Phone size={13} className="text-sandstone" />
+                  <span className={`font-body text-xs font-medium tracking-wide ${scrolled ? "text-bone/80" : "text-walnut/80"}`}>
+                    +91 98666 59400
+                  </span>
+                </a>
+                <div className="w-px h-3 bg-current opacity-20" />
+                <a href="tel:+918341149400" className="flex items-center gap-1.5 hover:text-sandstone transition-colors">
+                  <span className={`font-body text-xs font-medium tracking-wide ${scrolled ? "text-bone/80" : "text-walnut/80"}`}>
+                    +91 83411 49400
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </a>

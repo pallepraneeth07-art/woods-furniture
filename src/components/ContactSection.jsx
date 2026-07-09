@@ -40,6 +40,9 @@ export default function ContactSection() {
                 <a href="tel:+919866659400" className="text-walnut/60 font-body text-sm hover:text-sandstone transition-colors">
                   +91 98666 59400
                 </a>
+                <a href="tel:+918341149400" className="text-walnut/60 font-body text-sm hover:text-sandstone transition-colors">
+                  +91 83411 49400
+                </a>
               </div>
             </div>
 
