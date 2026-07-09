@@ -37,12 +37,14 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-walnut font-body text-sm font-medium">Call Us</p>
-                <a href="tel:+919866659400" className="text-walnut/60 font-body text-sm hover:text-sandstone transition-colors">
-                  +91 98666 59400
-                </a>
-                <a href="tel:+918341149400" className="text-walnut/60 font-body text-sm hover:text-sandstone transition-colors">
-                  +91 83411 49400
-                </a>
+                <div className="flex flex-col">
+                  <a href="tel:+919866659400" className="text-walnut/60 font-body text-sm hover:text-sandstone transition-colors">
+                    +91 98666 59400
+                  </a>
+                  <a href="tel:+918341149400" className="text-walnut/60 font-body text-sm hover:text-sandstone transition-colors">
+                    +91 83411 49400
+                  </a>
+                </div>
               </div>
             </div>
 
