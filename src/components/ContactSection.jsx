@@ -22,7 +22,7 @@ export default function ContactSection() {
           <h2 className="font-heading text-3xl md:text-5xl text-walnut font-medium leading-tight">
             Visit Our
             <br />
-            <span className="italic text-sandstone"></span>
+            <span className="italic text-sandstone">WOODS F</span>
           </h2>
           <p className="mt-6 text-walnut/60 font-body text-base leading-relaxed font-light max-w-md">
             Walk through our curated showroom and experience each piece up close. 
