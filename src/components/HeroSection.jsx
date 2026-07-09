@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import EnquireForm from "@/components/EnquireForm";
 
-const HERO_IMG = "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/2def08e35_generated_image.png";
+const HERO_IMG = "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/440e3ae13_generated_image.png";
 
 export default function HeroSection() {
   return (
