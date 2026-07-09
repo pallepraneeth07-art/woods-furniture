@@ -19,7 +19,7 @@ const CATEGORIES = [
   { name: "Dressing Tables", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/02275bee6_IMG_7654.jpg" },
   { name: "Shoe Racks", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/8552f83ab_generated_252fee30.png" },
   { name: "Accent Chairs", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/327910d91_generated_a961b8ef.png" },
-  { name: "Marbles", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/3a7c839a6_generated_ddf12d08.png" },
+  { name: "Marbles", image: "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/d668b488c_IMG-20240808-WA0018.jpg" },
   { name: "Bunk Beds", image: "https://media.base44.com/images/public/6a45ebcde6fb4264c098459a/33287566c_generated_bde83481.png" },
 ];
 
