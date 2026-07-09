@@ -8,16 +8,8 @@ const HERO_IMG = "https://media.base44.com/images/public/6a4f37503fd1b5d00fb7693
 export default function HeroSection() {
   return (
     <section id="hero" className="relative h-screen min-h-[600px] overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img
-          src={HERO_IMG}
-          alt="Premium furniture showcase"
-          className="w-full h-full object-cover" />
-        
-        <div className="absolute inset-0 bg-gradient-to-r from-walnut/80 via-walnut/50 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-walnut/60 via-transparent to-walnut/20" />
-      </div>
+      {/* Background */}
+      <div className="absolute inset-0 bg-walnut" />
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center px-6 md:px-16 lg:px-24 max-w-7xl mx-auto">
