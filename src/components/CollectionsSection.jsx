@@ -25,7 +25,7 @@ const CATEGORIES = [
 
 export default function CollectionsSection() {
   return (
-    <section id="collections" className="pb-20 md:pb-32 bg-oatmeal border-t border-walnut/20">
+    <section id="collections" className="pt-16 md:pt-24 pb-20 md:pb-32 bg-oatmeal border-t border-walnut/20">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
         
