@@ -36,7 +36,7 @@ export default function EnquireForm() {
       <div className="space-y-4">
         <div>
           <label className="block text-walnut/70 text-xs font-body tracking-widest uppercase mb-2">
-            Send To Showroom
+            Select the Location
           </label>
           <div className="grid grid-cols-2 gap-2">
             {SHOWROOMS.map((s) => (
