@@ -82,15 +82,17 @@ export default function HeroSection() {
         )}
       </AnimatePresence>
 
-      {/* Scroll indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+      {/* Scroll button */}
+      <motion.button
+        onClick={() => document.getElementById("collections")?.scrollIntoView({ behavior: "smooth" })}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 group cursor-pointer"
         animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}>
+        transition={{ duration: 2, repeat: Infinity }}
+        aria-label="Scroll to collections">
 
-        <span className="text-bone text-xs font-body tracking-widest uppercase">Scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-sandstone to-sandstone/20" />
-      </motion.div>
+        <span className="text-bone text-xs font-body tracking-widest uppercase group-hover:text-sandstone transition-colors">Scroll</span>
+        <div className="w-px h-8 bg-gradient-to-b from-sandstone to-sandstone/20 group-hover:from-bone transition-colors" />
+      </motion.button>
     </section>);
 
 }
