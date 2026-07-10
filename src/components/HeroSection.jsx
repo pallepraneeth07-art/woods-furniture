@@ -88,8 +88,8 @@ export default function HeroSection() {
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity }}>
 
-        <span className="text-bone/40 text-xs font-body tracking-widest uppercase">Scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-sandstone/60 to-transparent" />
+        <span className="text-bone text-xs font-body tracking-widest uppercase">Scroll</span>
+        <div className="w-px h-8 bg-gradient-to-b from-sandstone to-sandstone/20" />
       </motion.div>
     </section>);
 

@@ -32,7 +32,7 @@ export default function Navbar() {
           <img
             src={LOGO_URL}
             alt="Woods Furnitures Logo"
-            className="h-16 w-auto rounded-sm" />
+            className="h-16 w-auto rounded-sm object-cover ring-1 ring-sandstone/40 shadow-md" />
           
           <div className="hidden sm:block">
             <div className="flex flex-col gap-1">
