@@ -1,17 +1,21 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Send } from "lucide-react";
+import { Send, MapPin } from "lucide-react";
 
-const WHATSAPP_NUMBER = "918341149400";
+const SHOWROOMS = [
+  { id: "bowenpally", label: "Bowenpally", address: "Old Bowenpally, Secunderabad", number: "919866659400" },
+  { id: "doolapally", label: "Doolapally", address: "Dulapally Road, Kompally", number: "918341149400" }
+];
 
 export default function EnquireForm() {
-  const [form, setForm] = useState({ name: "", phone: "", message: "" });
+  const [form, setForm] = useState({ name: "", phone: "", message: "", showroom: "bowenpally" });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const text = `Hello Woods Furnitures, I'd like to enquire.%0A%0AName: ${encodeURIComponent(form.name)}%0APhone: ${encodeURIComponent(form.phone)}%0AMessage: ${encodeURIComponent(form.message)}`;
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
-    setForm({ name: "", phone: "", message: "" });
+    const selected = SHOWROOMS.find((s) => s.id === form.showroom) || SHOWROOMS[0];
+    const text = `Hello Woods Furnitures (${selected.label}), I'd like to enquire.%0A%0AName: ${encodeURIComponent(form.name)}%0APhone: ${encodeURIComponent(form.phone)}%0AMessage: ${encodeURIComponent(form.message)}`;
+    window.open(`https://wa.me/${selected.number}?text=${text}`, "_blank");
+    setForm({ name: "", phone: "", message: "", showroom: "bowenpally" });
   };
 
   return (
@@ -27,6 +31,32 @@ export default function EnquireForm() {
       </h3>
 
       <div className="space-y-4">
+        <div>
+          <label className="block text-walnut/70 text-xs font-body tracking-widest uppercase mb-2">
+            Send To Showroom
+          </label>
+          <div className="grid grid-cols-2 gap-2">
+            {SHOWROOMS.map((s) => (
+              <button
+                key={s.id}
+                type="button"
+                onClick={() => setForm({ ...form, showroom: s.id })}
+                className={`flex flex-col items-start gap-1 px-3 py-2.5 border text-left transition-colors ${
+                  form.showroom === s.id
+                    ? "border-sandstone bg-sandstone/10"
+                    : "border-sandstone/30 bg-oatmeal hover:border-sandstone/60"
+                }`}
+              >
+                <span className="flex items-center gap-1.5 text-walnut font-body text-xs font-medium">
+                  <MapPin size={12} className="text-sandstone" />
+                  {s.label}
+                </span>
+                <span className="text-walnut/50 font-body text-[10px]">{s.address}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
         <div>
           <label className="block text-walnut/70 text-xs font-body tracking-widest uppercase mb-2">
             Your Name
