@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { X, ChevronDown } from "lucide-react";
 import EnquireForm from "@/components/EnquireForm";
 
 const HERO_IMG = "https://media.base44.com/images/public/6a4f37503fd1b5d00fb76938/6b432cd08_IMG-20260709-WA0004.jpg";
@@ -92,6 +92,7 @@ export default function HeroSection() {
 
         <span className="text-bone text-xs font-body tracking-widest uppercase group-hover:text-sandstone transition-colors">Scroll</span>
         <div className="w-px h-8 bg-gradient-to-b from-sandstone to-sandstone/20 group-hover:from-bone transition-colors" />
+        <ChevronDown size={18} className="text-sandstone group-hover:text-bone transition-colors" />
       </motion.button>
     </section>);
 
