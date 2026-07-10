@@ -4,8 +4,11 @@ import { ArrowRight } from "lucide-react";
 
 export default function CategoryCard({ name, image, index, link }) {
   return (
-    <motion.div
-      className="group relative overflow-hidden bg-bone cursor-pointer"
+    <motion.a
+      href={link || "#contact"}
+      target={link ? "_blank" : undefined}
+      rel={link ? "noopener noreferrer" : undefined}
+      className="group relative overflow-hidden bg-bone cursor-pointer block"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
@@ -28,16 +31,13 @@ export default function CategoryCard({ name, image, index, link }) {
           </h3>
         </div>
 
-        <a
-          href={link || "#contact"}
-          target={link ? "_blank" : undefined}
-          rel={link ? "noopener noreferrer" : undefined}
-          className="mt-4 inline-flex items-center gap-2 border border-walnut/30 text-walnut px-5 py-2.5 text-xs font-body tracking-widest uppercase hover:bg-sandstone hover:text-bone hover:border-sandstone transition-all duration-400"
+        <span
+          className="mt-4 inline-flex items-center gap-2 border border-walnut/30 text-walnut px-5 py-2.5 text-xs font-body tracking-widest uppercase group-hover:bg-sandstone group-hover:text-bone group-hover:border-sandstone transition-all duration-400"
         >
           Explore
           <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
-        </a>
+        </span>
       </div>
-    </motion.div>
+    </motion.a>
   );
 }
