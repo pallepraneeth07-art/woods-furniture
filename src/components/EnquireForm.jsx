@@ -8,15 +8,18 @@ const SHOWROOMS = [
 ];
 
 export default function EnquireForm() {
-  const [form, setForm] = useState({ name: "", phone: "", message: "", showroom: "bowenpally" });
+  const [form, setForm] = useState({ name: "", phone: "", message: "", showroom: "" });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const selected = SHOWROOMS.find((s) => s.id === form.showroom) || SHOWROOMS[0];
+    const selected = SHOWROOMS.find((s) => s.id === form.showroom);
+    if (!selected) return;
     const text = `Hello Woods Furnitures (${selected.label}), I'd like to enquire.%0A%0AName: ${encodeURIComponent(form.name)}%0APhone: ${encodeURIComponent(form.phone)}%0AMessage: ${encodeURIComponent(form.message)}`;
     window.open(`https://wa.me/${selected.number}?text=${text}`, "_blank");
-    setForm({ name: "", phone: "", message: "", showroom: "bowenpally" });
+    setForm({ name: "", phone: "", message: "", showroom: "" });
   };
+
+  const locationChosen = Boolean(form.showroom);
 
   return (
     <motion.form
@@ -57,54 +60,57 @@ export default function EnquireForm() {
           </div>
         </div>
 
-        <div>
-          <label className="block text-walnut/70 text-xs font-body tracking-widest uppercase mb-2">
-            Your Name
-          </label>
-          <input
-            type="text"
-            required
-            value={form.name}
-            onChange={(e) => setForm({ ...form, name: e.target.value })}
-            className="w-full bg-oatmeal border border-sandstone/30 px-4 py-2.5 text-walnut font-body text-sm focus:outline-none focus:border-sandstone transition-colors"
-            placeholder="Enter your name"
-          />
-        </div>
+        <div className={locationChosen ? "" : "opacity-40 pointer-events-none"}>
+          <div>
+            <label className="block text-walnut/70 text-xs font-body tracking-widest uppercase mb-2">
+              Your Name
+            </label>
+            <input
+              type="text"
+              required
+              value={form.name}
+              onChange={(e) => setForm({ ...form, name: e.target.value })}
+              className="w-full bg-oatmeal border border-sandstone/30 px-4 py-2.5 text-walnut font-body text-sm focus:outline-none focus:border-sandstone transition-colors"
+              placeholder="Enter your name"
+            />
+          </div>
 
-        <div>
-          <label className="block text-walnut/70 text-xs font-body tracking-widest uppercase mb-2">
-            Phone Number
-          </label>
-          <input
-            type="tel"
-            required
-            value={form.phone}
-            onChange={(e) => setForm({ ...form, phone: e.target.value })}
-            className="w-full bg-oatmeal border border-sandstone/30 px-4 py-2.5 text-walnut font-body text-sm focus:outline-none focus:border-sandstone transition-colors"
-            placeholder="Enter your phone number"
-          />
-        </div>
+          <div className="mt-4">
+            <label className="block text-walnut/70 text-xs font-body tracking-widest uppercase mb-2">
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              required
+              value={form.phone}
+              onChange={(e) => setForm({ ...form, phone: e.target.value })}
+              className="w-full bg-oatmeal border border-sandstone/30 px-4 py-2.5 text-walnut font-body text-sm focus:outline-none focus:border-sandstone transition-colors"
+              placeholder="Enter your phone number"
+            />
+          </div>
 
-        <div>
-          <label className="block text-walnut/70 text-xs font-body tracking-widest uppercase mb-2">
-            Your Message
-          </label>
-          <textarea
-            rows={3}
-            value={form.message}
-            onChange={(e) => setForm({ ...form, message: e.target.value })}
-            className="w-full bg-oatmeal border border-sandstone/30 px-4 py-2.5 text-walnut font-body text-sm focus:outline-none focus:border-sandstone transition-colors resize-none"
-            placeholder="Tell us what you're looking for..."
-          />
-        </div>
+          <div className="mt-4">
+            <label className="block text-walnut/70 text-xs font-body tracking-widest uppercase mb-2">
+              Your Message
+            </label>
+            <textarea
+              rows={3}
+              value={form.message}
+              onChange={(e) => setForm({ ...form, message: e.target.value })}
+              className="w-full bg-oatmeal border border-sandstone/30 px-4 py-2.5 text-walnut font-body text-sm focus:outline-none focus:border-sandstone transition-colors resize-none"
+              placeholder="Tell us what you're looking for..."
+            />
+          </div>
 
-        <button
-          type="submit"
-          className="w-full flex items-center justify-center gap-2 bg-walnut text-bone py-3 text-xs font-body tracking-widest uppercase hover:bg-sandstone transition-colors"
-        >
-          Send via WhatsApp
-          <Send size={14} />
-        </button>
+          <button
+            type="submit"
+            disabled={!locationChosen}
+            className="w-full flex items-center justify-center gap-2 bg-walnut text-bone py-3 text-xs font-body tracking-widest uppercase hover:bg-sandstone transition-colors disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            Send via WhatsApp
+            <Send size={14} />
+          </button>
+        </div>
       </div>
     </motion.form>
   );
