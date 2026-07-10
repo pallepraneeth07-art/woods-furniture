@@ -94,7 +94,7 @@ export default function ContactSection() {
               <div>
                 <p className="text-walnut font-body text-sm font-medium">Hours</p>
                 <p className="text-walnut/60 font-body text-sm">
-                  Mon – Sat: 9:30 AM – 9:00 PM
+                  All Days: 10:30 AM – 9:00 PM
                 </p>
               </div>
             </div>
