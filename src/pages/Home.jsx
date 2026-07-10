@@ -5,6 +5,7 @@ import CollectionsSection from "@/components/CollectionsSection";
 import CraftsmanshipSection from "@/components/CraftsmanshipSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import ChatWidget from "@/components/ChatWidget";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <CraftsmanshipSection />
       <ContactSection />
       <Footer />
+      <ChatWidget />
     </div>
   );
 }
